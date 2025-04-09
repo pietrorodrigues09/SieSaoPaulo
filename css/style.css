@@ -1,0 +1,71 @@
+/* 
+#ed5761 vermelho claro
+#f4143f vermelho forte
+#404b62 cinza
+#ffffff branco
+#161515 preto
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+body{
+   background-color: rgb(145, 7, 7);
+}
+
+header{
+    background-color: #f4143f;
+    color: black;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    z-index: 1000 ;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: white
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+@media(max-width:675px){
+    header .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul{
+        margin-top: 10px;
+        flex-direction: column;
+    }
+}
